@@ -1,9 +1,8 @@
 console.log("working")
 
 
-fetch('https://whatyearisit-backend-seven-gules.vercel.app/year')
+fetch('https://whatyearisit-backend-seven-gules.vercel.app')
 .then(response => response.json())
 .then(data => {
-    document.querySelector("#year").textContent= data.year;
+    document.querySelector('#year').textContent= data.year;
 });
-
